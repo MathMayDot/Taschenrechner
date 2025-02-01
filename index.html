@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taschenrechner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="resultArea"></div>
+    <table>
+        <tr>
+            <td class="highlight" onclick="appenOperation('(')">(</td>
+            <td class="highlight" onclick="appenOperation(')')">)</td>
+            <td class="del" onclick="deleteAll()">Clear</td>
+            <td class="del" onclick="deleteLast()">Del</td>
+        </tr>
+        <tr>
+            <td onclick="appenOperation('7')">7</td>
+            <td onclick="appenOperation('8')">8</td>
+            <td onclick="appenOperation('9')">9</td>
+            <td class="highlight" onclick="appenOperation('-')">-</td>
+        </tr>
+        <tr>
+            <td onclick="appenOperation('4')">4</td>
+            <td onclick="appenOperation('5')">5</td>
+            <td onclick="appenOperation('6')">6</td>
+            <td class="highlight" onclick="appenOperation('+')">+</td>
+        </tr>
+        <tr>
+            <td onclick="appenOperation('1')">1</td>
+            <td onclick="appenOperation('2')">2</td>
+            <td onclick="appenOperation('3')">3</td>
+            <td class="highlight" onclick="appenOperation('*')">x</td>
+        </tr>
+        <tr>
+            <td onclick="appenOperation('0')">0</td>
+            <td onclick="appenOperation('.')">.</td>
+            <td id="result" onclick="calculateResult()">=</td>
+            <td class="highlight" onclick="appenOperation('/')">/</td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
