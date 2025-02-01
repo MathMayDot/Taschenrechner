@@ -10,34 +10,34 @@
     <div id="resultArea"></div>
     <table>
         <tr>
-            <td class="highlight" onclick="appenOperation('(')">(</td>
-            <td class="highlight" onclick="appenOperation(')')">)</td>
+            <td class="highlight" onclick="appendOperation('(')">(</td>
+            <td class="highlight" onclick="appendOperation(')')">)</td>
             <td class="del" onclick="deleteAll()">Clear</td>
             <td class="del" onclick="deleteLast()">Del</td>
         </tr>
         <tr>
-            <td onclick="appenOperation('7')">7</td>
-            <td onclick="appenOperation('8')">8</td>
-            <td onclick="appenOperation('9')">9</td>
-            <td class="highlight" onclick="appenOperation('-')">-</td>
+            <td onclick="appendOperation('7')">7</td>
+            <td onclick="appendOperation('8')">8</td>
+            <td onclick="appendOperation('9')">9</td>
+            <td class="highlight" onclick="appendOperation('-')">-</td>
         </tr>
         <tr>
-            <td onclick="appenOperation('4')">4</td>
-            <td onclick="appenOperation('5')">5</td>
-            <td onclick="appenOperation('6')">6</td>
-            <td class="highlight" onclick="appenOperation('+')">+</td>
+            <td onclick="appendOperation('4')">4</td>
+            <td onclick="appendOperation('5')">5</td>
+            <td onclick="appendOperation('6')">6</td>
+            <td class="highlight" onclick="appendOperation('+')">+</td>
         </tr>
         <tr>
-            <td onclick="appenOperation('1')">1</td>
-            <td onclick="appenOperation('2')">2</td>
-            <td onclick="appenOperation('3')">3</td>
-            <td class="highlight" onclick="appenOperation('*')">x</td>
+            <td onclick="appendOperation('1')">1</td>
+            <td onclick="appendOperation('2')">2</td>
+            <td onclick="appendOperation('3')">3</td>
+            <td class="highlight" onclick="appendOperation('*')">x</td>
         </tr>
         <tr>
-            <td onclick="appenOperation('0')">0</td>
-            <td onclick="appenOperation('.')">.</td>
+            <td onclick="appendOperation('0')">0</td>
+            <td onclick="appendOperation('.')">.</td>
             <td id="result" onclick="calculateResult()">=</td>
-            <td class="highlight" onclick="appenOperation('/')">/</td>
+            <td class="highlight" onclick="appendOperation('/')">/</td>
         </tr>
     </table>
     <script src="script.js"></script>

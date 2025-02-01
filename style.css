@@ -49,7 +49,7 @@ td:hover {
   transition: 0.5s;
 }
 
-del:hover {
+.del:hover {
   background-color: rgb(250, 30, 30);
 }
 

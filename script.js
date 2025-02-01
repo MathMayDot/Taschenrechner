@@ -1,7 +1,7 @@
 /* JavaScript Datei - script.js */
 "use strict";
 
-function appenOperation(operation) {
+function appendOperation(operation) {
     document.getElementById('resultArea').innerHTML += operation;
 }
 
