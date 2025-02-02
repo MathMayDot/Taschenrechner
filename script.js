@@ -6,9 +6,26 @@ function appendOperation(operation) {
 }
 
 function calculateResult(){
-    const calculateResult = document.getElementById('resultArea');
-    const result = eval(calculateResult.innerHTML);
-    calculateResult.innerHTML = result;
+    const displayElement = document.getElementById('resultArea');
+    const mathExpression = displayElement.innerHTML;
+
+    try {
+        if(mathExpression === ""){
+            displayElement.innerHTML = "0";
+            return;
+        }
+    
+    const calculateResult = math.evaluate(mathExpression);
+
+        if(calculateResult === Infinity){
+            displayElement.innerHTML = "Teilen durch 0 nicht möglich";
+            return;
+        }
+    displayElement.innerHTML = calculateResult;
+
+        } catch(error) {
+        displayElement.innerHTML = "Math error"
+        }
 }
 
 function deleteAll(){
